@@ -1,0 +1,31 @@
+.background{
+    display: flex;
+    justify-content: center;
+}
+.back{
+    position: absolute;
+    justify-content: center;
+    z-index: -99999;
+    opacity: 0.1;
+    width: 80%;
+    height: 50rem;
+    overflow: hidden;
+    animation: rotateX 30s 1ms ease-in-out infinite; 
+}
+
+@keyframes rotateX {
+    0% {
+        overflow: hidden;
+        transform: rotateZ(0deg);
+    }
+    100% {
+        overflow: hidden;
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+
+
