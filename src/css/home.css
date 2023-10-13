@@ -1,6 +1,5 @@
 .header{
     margin: 0.2rem;
-    padding: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,8 +57,8 @@ line-height: normal;
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 .selection{
-    background-image: linear-gradient(to right, #6ff99f, #3ed679, #04fe43, #53ed3f);
-    color: rgb(7, 7, 39);
+    background-image: linear-gradient(to right,  #6fd0f9, #4481eb, #04befe, #3f86ed);
+    color: white;
     box-shadow: 0 4px 15px 0 rgba(65, 234, 183, 0.75);
 }
 .button:hover{
