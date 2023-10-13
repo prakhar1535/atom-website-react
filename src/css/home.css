@@ -76,7 +76,7 @@ line-height: normal;
     color: rgb(113, 234, 255);
 }
 @media  screen and (max-width: 768px) {
-    .heading_conatin{
+    .heading_contain{
         width: 100%;   
     }
     h1 , .atom-robotics{
