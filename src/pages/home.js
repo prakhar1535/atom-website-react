@@ -26,7 +26,13 @@ const Home = () =>{
 return(
     <div className="header">
         <h1 >Welcome To <span className="atom-robotics" >ATOM Robotics</span> </h1>
-        <h6 className="head" >{atom}</h6>
+        <div className="heading_contain">
+        <h6 className="head">{atom}</h6>
+        </div>
+        <div className="button_grp">
+            <a><button className="button" type="submit">Contact Us</button></a>
+            <a><button className="button" type="submit">Selection Task</button></a>
+        </div>
     </div>
 )
 }

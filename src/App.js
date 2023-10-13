@@ -8,8 +8,6 @@ import Projects from './pages/projects'
 import Download from './pages/download'
 import Navbar from './components/navbar'
 import './App.css'
-import { motion } from "framer-motion";
-import cursor from "./cursor.svg"
 import Background from "./components/background"
 
 
@@ -50,31 +48,18 @@ function App() {
     return(
       
     
-    <BrowserRouter>
-       
-       
-       <Navbar/>
-       <Background/>
+ <BrowserRouter> 
+    <Navbar/>
+    <Background/>
     <Routes>
- 
         <Route path="/" element={<Home />}/>
         <Route path="about" element={<About />}/>
         <Route path="blog" element={<Blog />}/>
         <Route path="wiki" element={<Wiki />}/>
         <Route path="projects" element={<Projects />}/>
         <Route path="download" element={<Download />}/>
-    
     </Routes>
-    <motion.img
-    src={cursor}
-    alt="cursor"
-    className="cursor"
-    variants={variants}
-    animate="default"
-    />
-       
-    
-    </BrowserRouter>
+</BrowserRouter>
     
     )
 }
