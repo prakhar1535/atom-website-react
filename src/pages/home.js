@@ -30,8 +30,8 @@ return(
         <h6 className="head">{atom}</h6>
         </div>
         <div className="button_grp">
-            <a><button className="button" type="submit">Contact Us</button></a>
-            <a><button className="button" type="submit">Selection Task</button></a>
+            <a href="https://linktr.ee/a.t.o.m_robotics_lab" target="_blank"><button className="button" type="submit">Contact Us</button></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScZVT2Fe0cWHGbEaG_1kTMZ6PIN3-Gf-etlu5Apdbid7y-Zrg/viewform" target="_blank"><button className="button selection" type="submit">Selection Task 2023</button></a>
         </div>
     </div>
 )

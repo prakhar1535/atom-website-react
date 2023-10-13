@@ -57,6 +57,11 @@ line-height: normal;
     background-image: linear-gradient(to right, #6fd0f9, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
+.selection{
+    background-image: linear-gradient(to right, #6ff99f, #3ed679, #04fe43, #53ed3f);
+    color: rgb(7, 7, 39);
+    box-shadow: 0 4px 15px 0 rgba(65, 234, 183, 0.75);
+}
 .button:hover{
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
@@ -67,6 +72,9 @@ line-height: normal;
 .heading_contain{
     width: 100vh;
     display: block;
+}
+.active{
+    color: rgb(113, 234, 255);
 }
 @media  screen and (max-width: 768px) {
     .heading_conatin{

@@ -8,6 +8,7 @@ const Background = () =>{
            <img 
            className="back"
            src={back}
+           
            alt="background"
            />
         </div>

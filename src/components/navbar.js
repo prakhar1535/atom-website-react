@@ -156,35 +156,35 @@ const Header = () => {
       <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
         <Item>
-            <NavLink to='/'>
+            <NavLink to='/' onClick={() => toggleNav(!toggle)}>
               Home
             </NavLink>
           </Item>
           <Item>
           
-            <NavLink to='/about'>
+            <NavLink to='/about' onClick={() => toggleNav(!toggle)}>
               About
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/blog'>
+            <NavLink to='/blog' onClick={() => toggleNav(!toggle)}>
               Blog
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/projects'>
+            <NavLink to='/projects' onClick={() => toggleNav(!toggle)}>
               Projects
             </NavLink>
           </Item>
           <Item>
-            <NavLink to='/wiki'>
+            <NavLink to='/wiki' onClick={() => toggleNav(!toggle)}>
               Wiki
             </NavLink>
           </Item>
           <Item>
-            <NavLink to='/download'>
+            <NavLink to='/download' onClick={() => toggleNav(!toggle)}>
               Download
             </NavLink>
           </Item>
