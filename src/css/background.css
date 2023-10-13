@@ -6,7 +6,7 @@
     position: absolute;
     justify-content: center;
     z-index: -99999;
-    opacity: 0.1;
+    opacity: 0.4;
     width: 80%;
     height: 50rem;
     overflow: hidden;
