@@ -1,7 +1,7 @@
 
 nav {
     color: rgb(255, 255, 255);
-
+    z-index: 99999999;
     top: 0px;
 }
   
@@ -45,7 +45,9 @@ nav {
 .head{
     transition: opacity ease-in-out 0.3s;
 }
-
+.nav_con{
+    text-decoration: none;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 600px) {

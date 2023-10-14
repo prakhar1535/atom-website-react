@@ -72,8 +72,9 @@ const Line = styled.span`
 const Overlay = styled.div`
   position: absolute;
   height: ${props => (props.open ? "80vh" : 0)};
-  width: 90vw;
-  background: #0B0312;
+  width: 100vw;
+  background-color: rgba(251, 237, 237, 0.2); 
+  backdrop-filter: blur(50px);
   text-align: center;
   transition: height 0.4s ease-in-out;
 
@@ -87,12 +88,14 @@ const OverlayMenu = styled.ul`
   position: absolute;
   left: 50%;
   top: 45%;
+
   transform: translate(-50%, -50%);
 
   li {
     opacity: ${props => (props.open ? 1 : 0)};
     font-size: 25px;
     margin: 50px 0px;
+
     transition: opacity 0.4s ease-in-out;
   }
 
@@ -110,38 +113,38 @@ const Header = () => {
         <Menu>
           <Item>
 
-            <NavLink to='/'>
+            <NavLink to='/'  style={{textDecoration: 'none'}} className='nav_con'>
               Home
             </NavLink>
           </Item>
           <Item>
           
-            <NavLink to='/about'>
+            <NavLink to='/about' style={{textDecoration: 'none'}} className='nav_con'>
               About
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/blog'>
+            <NavLink to='/blog'  style={{textDecoration: 'none'}} className='nav_con'>
               Blog
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/projects'>
+            <NavLink to='/projects'  style={{textDecoration: 'none'}} className='nav_con'>
               Projects
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/wiki'>
+            <NavLink to='/wiki'  style={{textDecoration: 'none'}} className='nav_con'>
               Wiki
             </NavLink>
           </Item>
           
 
           <Item>
-            <NavLink to='/download' >
+            <NavLink to='/download'  style={{textDecoration: 'none'}} className='nav_con'>
               Download
             </NavLink>
           </Item>
@@ -156,35 +159,35 @@ const Header = () => {
       <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
         <Item>
-            <NavLink to='/' onClick={() => toggleNav(!toggle)}>
+            <NavLink to='/' style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
               Home
             </NavLink>
           </Item>
           <Item>
           
-            <NavLink to='/about' onClick={() => toggleNav(!toggle)}>
+            <NavLink to='/about' style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
               About
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/blog' onClick={() => toggleNav(!toggle)}>
+            <NavLink to='/blog' style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
               Blog
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/projects' onClick={() => toggleNav(!toggle)}>
+            <NavLink to='/projects'  style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
               Projects
             </NavLink>
           </Item>
           <Item>
-            <NavLink to='/wiki' onClick={() => toggleNav(!toggle)}>
+            <NavLink to='/wiki' style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
               Wiki
             </NavLink>
           </Item>
           <Item>
-            <NavLink to='/download' onClick={() => toggleNav(!toggle)}>
+            <NavLink to='/download' style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
               Download
             </NavLink>
           </Item>

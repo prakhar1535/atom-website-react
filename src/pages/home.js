@@ -4,7 +4,7 @@ import "../css/home.css"
 
 
 const Home = () =>{
-    const texts = ["We are Robotics", "We are Reality" , "We are Best" , "We are ATOM" , "We are No.1"]; 
+    const texts = ["We are Robotics", "We are Reality"  , "We are ATOM" ]; 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [atom, setAtom] = useState(texts[currentIndex]);
 

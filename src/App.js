@@ -12,37 +12,6 @@ import Background from "./components/background"
 
 
 function App() {
-    const [mouseposition , setMousePosition] = useState(
-       {
-        x:0,
-        y:0
-       }
-    )
-    console.log(mouseposition)
-  
-    useEffect(
-        () =>{
-            const mousemove = e =>{
-                setMousePosition({
-                    x: e.clientX,
-                    y: e.clientY
-                })
-            }
-            window.addEventListener("mousemove" , mousemove)
-            return () => {
-                window.removeEventListener("mousemove", mousemove)
-            } 
-                },
-                []
-    )
-    const variants = {
-        default : {
-            x: mouseposition.x ,
-            y: mouseposition.y ,
-            mixBlendMode: "difference"
-        }
-        
-    }
 
 
     return(

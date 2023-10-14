@@ -1,5 +1,5 @@
 .header{
-    margin: 0.2rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +32,7 @@ font-weight: 700;
 line-height: normal;
 }
 .button_grp{
-   
+   margin-top: 4rem;
 }
 .button{
     margin-top: 2rem;
@@ -59,7 +59,7 @@ line-height: normal;
 .selection{
     background-image: linear-gradient(to right,  #6fd0f9, #4481eb, #04befe, #3f86ed);
     color: white;
-    box-shadow: 0 4px 15px 0 rgba(65, 234, 183, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 .button:hover{
     background-position: 100% 0;
@@ -74,6 +74,8 @@ line-height: normal;
 }
 .active{
     color: rgb(113, 234, 255);
+    font-weight: bold;
+    text-decoration: none;
 }
 @media  screen and (max-width: 768px) {
     .heading_contain{
@@ -81,8 +83,5 @@ line-height: normal;
     }
     h1 , .atom-robotics{
         font-size: 3.5rem;
-    }
-    .header{
-        padding: 5vh;
     }
 }
