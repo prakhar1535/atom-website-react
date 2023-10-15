@@ -10,7 +10,7 @@ const About = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const text =
-    "With the introduction of Robotics & AI. Intelligent & Advanced robots are now being used everywhere to either assist humans or execute tasks that otherwise wouldn't have been possible by humans. Open source technologies like Gazebo Robotics Simulator & ROS (Robot Operating System) have made intelligent industrial/household robotics accessible to students & researchers. As engineering students, these technologies intrigue us to become a part of this industrial revolution on the brink of innovation.";
+    "With the introduction of Robotics & AI. Intelligent & Advanced robots are now being used everywhere to either assist humans or execute tasks that otherwise wouldn't have been possible by humans. As engineering students, these technologies intrigue us to become a part of this industrial revolution on the brink of innovation.";
 
   const [displayText, setDisplayText] = useState('');
 

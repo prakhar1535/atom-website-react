@@ -35,14 +35,6 @@ margin-left: 2rem;
 margin-right: 2rem;
 `;
 
-const Link = styled.div`
-  color: white;
-  text-decoration: none;
-
-  :hover {
-    text-decoration: underline;
-  }
-`;
 
 const NavIcon = styled.button`
   background: none;
@@ -73,8 +65,9 @@ const Overlay = styled.div`
   position: absolute;
   height: ${props => (props.open ? "80vh" : 0)};
   width: 100vw;
-  background-color: rgba(251, 237, 237, 0.2); 
-  backdrop-filter: blur(50px);
+  background-color: rgba(255,255,255,0.15);
+  box-shadow: 0px 8px 32px 0px rgba(255, 255, 255, 0.062);
+  backdrop-filter: blur(50.5px);
   text-align: center;
   transition: height 0.4s ease-in-out;
 
@@ -109,7 +102,7 @@ const Header = () => {
   return (
     <>
       <Nav>
-        <Logo><img src={back} width={42} height={42} ></img></Logo>
+        <Logo><img src={back} width={42} height={42} alt="logo"></img></Logo>
         <Menu>
           <Item>
 
@@ -126,18 +119,18 @@ const Header = () => {
 
           <Item>
             <NavLink to='/blog'  style={{textDecoration: 'none'}} className='nav_con'>
-              Blog
+              Acheivements  
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/projects'  style={{textDecoration: 'none'}} className='nav_con'>
+            <NavLink to='https://github.com/atom-robotics-lab'  style={{textDecoration: 'none'}} className='nav_con'>
               Projects
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/wiki'  style={{textDecoration: 'none'}} className='nav_con'>
+            <NavLink to='https://atom-robotics-lab.github.io/wiki/'   style={{textDecoration: 'none'}} className='nav_con'>
               Wiki
             </NavLink>
           </Item>
@@ -172,17 +165,17 @@ const Header = () => {
 
           <Item>
             <NavLink to='/blog' style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
-              Blog
+              Acheivements
             </NavLink>
           </Item>
 
           <Item>
-            <NavLink to='/projects'  style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
+            <NavLink to='https://github.com/atom-robotics-lab'  style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
               Projects
             </NavLink>
           </Item>
           <Item>
-            <NavLink to='/wiki' style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
+            <NavLink to='https://atom-robotics-lab.github.io/wiki/' style={{textDecoration: 'none'}} onClick={() => toggleNav(!toggle)}>
               Wiki
             </NavLink>
           </Item>
