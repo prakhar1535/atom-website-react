@@ -1,7 +1,23 @@
 import React, { useState } from 'react'
 import '../css/card.css'
+import styled from 'styled-components';
 
 function Cards(props) {
+
+    const OverlayDiv = styled.div`
+    display: flex;
+    width: 50vw;
+    height: 70vh;
+    overflow-y: scroll;
+    border-radius: 16px;
+    background-color: rgba(251, 237, 237, 0.2); 
+    backdrop-filter: blur(40px);
+    border: 2px solid white;
+  
+    @media (max-width: 768px) {
+      width: 80vw;
+    }
+  `;  
   const [showOverlay, setShowOverlay] = useState(false);
   const handleCloseClick = (event) => {
     event.stopPropagation();
@@ -19,9 +35,9 @@ function Cards(props) {
       />
       {showOverlay && (
         <div className='overlayStyles' style={overlayStyles} onClick={handleCloseClick}>
-        <div style={overlayDiv}>
+        <OverlayDiv>
                  {props.overlayContent}
-        </div>
+        </OverlayDiv>
         </div>
       )}
     </div>
